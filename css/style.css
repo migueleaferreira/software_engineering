@@ -50,6 +50,49 @@ footer p {
   font-size: 0.9rem;
 }
 
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-link {
+  color: #4da6ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #80c0ff;
+  text-decoration: underline;
+}
+
+.footer-name {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+
 /* ========================================
    IMAGEM PRINCIPAL
 ======================================== */

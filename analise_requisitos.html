@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análise de Requisitos - Engenharia de Software</title>
+
+    <!-- Google Fonts - Sora -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="light-theme">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm px-4 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="analise_requisitos.html">Análise de Requisitos</a>
+
+            <button id="theme-toggle" class="btn btn-sm btn-outline-light me-2" title="Alternar tema">
+                <i class="bi bi-brightness-high-fill" id="theme-icon"></i>
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#introducao">Introdução</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tipos">Tipos de Requisitos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#processo">Processo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnicas">Técnicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#desafios">Desafios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mt-5 pt-4"></div>
+
+    <!-- IMAGEM PRINCIPAL -->
+    <section class="image-section text-center my-4">
+        <img src="./assets/img/anarequi.png" alt="Análise de Requisitos" class="img-fluid rounded shadow-sm">
+    </section>
+
+    <!-- CONTEÚDO -->
+    <main class="container my-5">
+        <section id="introducao" class="mb-5">
+            <h3>INTRODUÇÃO À ANÁLISE DE REQUISITOS 📋</h3>
+            <p>
+                A <strong>Análise de Requisitos</strong> é a disciplina fundamental dentro da Engenharia de Software.
+                Ela atua como a ponte de comunicação entre as <strong>necessidades do negócio</strong> (o que o cliente
+                quer)
+                e o <strong>desenvolvimento técnico</strong> (o que o desenvolvedor constrói).
+            </p>
+            <p>
+                Sua principal meta é <strong>entender, definir e documentar</strong> o escopo e as funcionalidades do
+                sistema,
+                minimizando o risco de desenvolver a solução errada. É o alicerce de qualquer projeto de software
+                bem-sucedido.
+            </p>
+        </section>
+
+        <section id="tipos" class="mb-5">
+            <h3>CLASSIFICAÇÃO E TIPOS DE REQUISITOS 🏷️</h3>
+            <p>Os requisitos são a base de qualquer projeto e são divididos em categorias para garantir uma cobertura
+                completa das necessidades.</p>
+
+            <h5 class="mt-4"><strong>1. Requisitos Funcionais (RF)</strong></h5>
+            <p><strong>Definição:</strong> Descrevem as funções ou serviços que o sistema deve fornecer.</p>
+            <p><strong>Foco:</strong> O que o sistema faz.</p>
+            <p><strong>Exemplos:</strong></p>
+            <ul>
+                <li>Permitir login e logout de usuários.</li>
+                <li>Executar o cálculo de impostos de acordo com a legislação vigente.</li>
+                <li>Gerar um relatório de vendas diárias em formato PDF.</li>
+            </ul>
+
+            <h5 class="mt-4"><strong>2. Requisitos Não Funcionais (RNF)</strong></h5>
+            <p><strong>Definição:</strong> Descrevem as qualidades, restrições ou atributos de desempenho que o sistema
+                deve possuir. Eles definem como o sistema deve ser.</p>
+            <p><strong>Foco:</strong> O como o sistema funciona e suas restrições.</p>
+            <p><strong>Subtipos Comuns:</strong></p>
+            <ul>
+                <li><strong>Usabilidade:</strong> Facilidade de uso e aprendizado do sistema. (Ex: A interface deve ser
+                    intuitiva.)</li>
+                <li><strong>Desempenho:</strong> Velocidade, tempo de resposta e capacidade de processamento. (Ex: O
+                    carregamento da página inicial não deve exceder 1.5 segundos.)</li>
+                <li><strong>Segurança:</strong> Proteção de dados e acesso. (Ex: Todas as senhas devem ser
+                    criptografadas usando AES-256.)</li>
+                <li><strong>Confiabilidade:</strong> Capacidade de operar sem falhas. (Ex: O tempo de inatividade não
+                    pode ser superior a 0,1% do tempo total de uso.)</li>
+            </ul>
+        </section>
+
+        <section id="processo" class="mb-5">
+            <h3>O PROCESSO: ENGENHARIA DE REQUISITOS ⚙️</h3>
+            <p>A análise não é um evento único, mas um ciclo interativo de atividades:</p>
+
+            <div class="table-responsive mt-3">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Etapa</th>
+                            <th>Objetivo Principal</th>
+                            <th>Atividades Chave</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Elicitação</strong></td>
+                            <td>Descobrir e coletar as necessidades dos stakeholders</td>
+                            <td>Entrevistas, Brainstorming, Workshops (JAD), Observação</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Análise</strong></td>
+                            <td>Refinar os requisitos brutos, resolver conflitos e modelar</td>
+                            <td>Modelagem UML (Casos de Uso, Classes), Priorização, Verificação de viabilidade</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Especificação</strong></td>
+                            <td>Documentar formalmente os requisitos de forma clara e não ambígua</td>
+                            <td>Criação da ERS (Especificação de Requisitos de Software) ou User Stories (em
+                                metodologias ágeis)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Validação</strong></td>
+                            <td>Garantir que os requisitos definidos atendem às expectativas do cliente</td>
+                            <td>Revisões formais, Inspeções, Construção de Protótipos</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5. Gerenciamento</strong></td>
+                            <td>Controlar as mudanças e manter a rastreabilidade ao longo do projeto</td>
+                            <td>Estabelecimento de uma linha de base (baseline), Processo de Controle de Mudanças</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="tecnicas" class="mb-5">
+            <h3>TÉCNICAS CHAVE PARA ANÁLISE APROFUNDADA 🔍</h3>
+            <p>O sucesso da análise depende do uso estratégico de diversas técnicas:</p>
+
+            <h5 class="mt-3"><strong>Modelagem de Processos e Dados</strong></h5>
+            <p>
+                Uso de <strong>UML (Unified Modeling Language)</strong>, como Diagramas de Caso de Uso e Diagramas de
+                Atividade,
+                para representar visualmente as funcionalidades e o fluxo de trabalho. Diagramas de
+                Entidade-Relacionamento
+                para modelar a estrutura de dados.
+            </p>
+
+            <h5 class="mt-3"><strong>Prototipação Iterativa</strong></h5>
+            <p>
+                Criação rápida de um modelo do sistema (de baixa ou alta fidelidade). Ajuda os stakeholders a
+                visualizarem
+                o produto e a fornecerem feedback valioso antes que o desenvolvimento real comece, reduzindo o risco de
+                erro.
+            </p>
+
+            <h5 class="mt-3"><strong>Workshops de Desenvolvimento Conjunto (JAD)</strong></h5>
+            <p>
+                <strong>Joint Application Design:</strong> Sessões estruturadas que reúnem clientes, usuários e
+                desenvolvedores
+                para definir e revisar requisitos em tempo real, construindo consenso de forma acelerada.
+            </p>
+        </section>
+
+        <section id="desafios" class="mb-5">
+            <h3>DESAFIOS E BOAS PRÁTICAS ⚠️</h3>
+
+            <div class="table-responsive mt-3">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Desafio Comum</th>
+                            <th>Boas Práticas de Mitigação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Requisitos Ambíguos</strong></td>
+                            <td>Usar linguagem clara, concisa e técnica. Evitar jargões e documentar um glossário de
+                                termos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Inconsistências e Conflitos</strong></td>
+                            <td>Modelar o sistema para identificar sobreposições e resolver conflitos entre stakeholders
+                                através de negociação e priorização.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mudanças Constantes</strong></td>
+                            <td>Implementar um Processo Formal de Gerenciamento de Mudanças (com avaliação de impacto) e
+                                definir uma linha de base de requisitos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Falta de Engajamento</strong></td>
+                            <td>Envolver os stakeholders certos desde o início (Matriz de Poder/Interesse) e usar
+                                técnicas visuais (protótipos) para mantê-los interessados.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CONTATO E PERFIS -->
+        <section id="contact" class="mb-5">
+            <h3>CONTATO E PERFIS 🔗</h3>
+
+            <div class="profile-links mb-3">
+                <a href="https://orcid.org/0009-0003-5991-5520" target="_blank" title="ORCID">
+                    <i class="fab fa-orcid"></i> ORCID
+                </a>
+                <a href="https://zenodo.org/users/miguel-ferreira" target="_blank" title="Zenodo">
+                    <i class="fas fa-database"></i> Zenodo
+                </a>
+                <a href="https://www.linkedin.com/in/miguel-expedito-2aa2a9164/" target="_blank" title="Linkedin">
+                    <i class="fab fa-linkedin"></i> Linkedin
+                </a>
+                <a href="https://github.com/migueleaferreira" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="contact-info">
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:miguelferreiiraa@outlok.com">miguelferreiiraa@outlok.com</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="engenharia_de_software.html" class="footer-link left">← Engenharia de Software</a>
+            <p class="footer-name">Miguel Expedito © 2025</p>
+            <a href="projeto_delivery.html" class="footer-link right">Projeto Delivery →</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

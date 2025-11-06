@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto - Sistema de Delivery</title>
+
+    <!-- Google Fonts - Sora -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="light-theme">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm px-4 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="projeto_delivery.html">Sistema de Delivery</a>
+
+            <button id="theme-toggle" class="btn btn-sm btn-outline-light me-2" title="Alternar tema">
+                <i class="bi bi-brightness-high-fill" id="theme-icon"></i>
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#ideia">Ideia do Projeto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ciclo">Ciclo de Vida</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produto">Produto Final</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apresentacao">Apresentação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mt-5 pt-4"></div>
+
+    <!-- IMAGEM PRINCIPAL -->
+    <section class="image-section text-center my-4">
+        <img src="./assets/img/deli.png" alt="Sistema de Delivery" class="img-fluid rounded shadow-sm">
+    </section>
+
+    <!-- CONTEÚDO -->
+    <main class="container my-5">
+        <section id="ideia" class="mb-5">
+            <h3>1. IDEIA DO SOFTWARE 🚀</h3>
+            <h5 class="mt-3"><strong>QuickFood - Sistema de Delivery Inteligente</strong></h5>
+            <p>
+                O <strong>QuickFood</strong> é um sistema completo de delivery de alimentos que conecta
+                <strong>restaurantes,
+                    entregadores e clientes</strong> em uma única plataforma integrada. O objetivo é facilitar o
+                processo de pedidos
+                online, otimizar rotas de entrega e proporcionar uma experiência de usuário superior.
+            </p>
+
+            <h6 class="mt-3"><strong>Tipo de Software:</strong></h6>
+            <ul>
+                <li><strong>Aplicativo Mobile:</strong> Para clientes (Android e iOS) e entregadores.</li>
+                <li><strong>Sistema Web:</strong> Para restaurantes gerenciarem pedidos e cardápios.</li>
+                <li><strong>Painel Administrativo:</strong> Para gestão geral da plataforma.</li>
+            </ul>
+
+            <h6 class="mt-3"><strong>Principais Funcionalidades:</strong></h6>
+            <ul>
+                <li>Cadastro e autenticação de usuários (clientes, restaurantes, entregadores).</li>
+                <li>Busca e filtragem de restaurantes por categoria, localização e avaliação.</li>
+                <li>Montagem de pedidos com personalização de itens.</li>
+                <li>Sistema de pagamento integrado (cartão, PIX, dinheiro).</li>
+                <li>Rastreamento em tempo real do pedido e entregador.</li>
+                <li>Sistema de avaliações e comentários.</li>
+                <li>Notificações push sobre status do pedido.</li>
+                <li>Gestão de promoções e cupons de desconto.</li>
+            </ul>
+        </section>
+
+        <section id="ciclo" class="mb-5">
+            <h3>2. MODELO DE CICLO DE VIDA 🔄</h3>
+            <h5 class="mt-3"><strong>Modelo Escolhido: Scrum (Metodologia Ágil)</strong></h5>
+
+            <h6 class="mt-3"><strong>Por quê Scrum?</strong></h6>
+            <p>
+                O modelo <strong>Scrum</strong> foi escolhido pelos seguintes motivos:
+            </p>
+            <ul>
+                <li><strong>Entregas Incrementais:</strong> Permite lançar funcionalidades prioritárias rapidamente (MVP
+                    - Produto Mínimo Viável)
+                    e coletar feedback dos usuários reais antes de investir em todas as features.</li>
+                <li><strong>Flexibilidade:</strong> O mercado de delivery é dinâmico. O Scrum permite ajustar
+                    prioridades conforme
+                    surgem novas demandas ou mudanças no comportamento do usuário.</li>
+                <li><strong>Colaboração Contínua:</strong> Com sprints de 2 semanas, a equipe se mantém alinhada e
+                    problemas
+                    são identificados e resolvidos rapidamente.</li>
+                <li><strong>Redução de Riscos:</strong> Entregas frequentes diminuem o risco de desenvolver
+                    funcionalidades
+                    que não atendem às expectativas do cliente.</li>
+                <li><strong>Transparência:</strong> Daily meetings e retrospectivas garantem comunicação clara entre
+                    todos os membros da equipe.</li>
+            </ul>
+
+            <h6 class="mt-3"><strong>Estrutura de Sprints:</strong></h6>
+            <ul>
+                <li><strong>Sprint 1-2:</strong> MVP - Cadastro, login, listagem de restaurantes, pedido básico.</li>
+                <li><strong>Sprint 3-4:</strong> Sistema de pagamento e notificações.</li>
+                <li><strong>Sprint 5-6:</strong> Rastreamento em tempo real e avaliações.</li>
+                <li><strong>Sprint 7+:</strong> Funcionalidades avançadas (cupons, programa de fidelidade, chat).</li>
+            </ul>
+        </section>
+
+        <section id="equipe" class="mb-5">
+            <h3>3. FUNÇÕES NECESSÁRIAS NA EQUIPE 👥</h3>
+            <p>Para o desenvolvimento do QuickFood, a equipe ideal seria composta por:</p>
+
+            <div class="table-responsive mt-3">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Função</th>
+                            <th>Responsabilidades</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Product Owner (PO)</strong></td>
+                            <td>Definir visão do produto, priorizar backlog, validar entregas com stakeholders.</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Scrum Master</strong></td>
+                            <td>Facilitar cerimônias do Scrum, remover impedimentos, garantir que a equipe siga as
+                                práticas ágeis.</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Desenvolvedor Mobile</strong></td>
+                            <td>Desenvolver aplicativos Android e iOS (React Native ou Flutter).</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Desenvolvedor Back-end</strong></td>
+                            <td>Criar APIs RESTful, gerenciar banco de dados, implementar lógica de negócio (Node.js,
+                                Python, Java).</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Desenvolvedor Front-end Web</strong></td>
+                            <td>Desenvolver painel web para restaurantes (React, Vue.js ou Angular).</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Designer UI/UX</strong></td>
+                            <td>Criar interfaces intuitivas, realizar testes de usabilidade, desenvolver protótipos.
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Engenheiro de QA</strong></td>
+                            <td>Realizar testes automatizados e manuais, garantir qualidade do software.</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>DevOps Engineer</strong></td>
+                            <td>Configurar infraestrutura em nuvem (AWS, Google Cloud), CI/CD, monitoramento.</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Analista de Dados</strong></td>
+                            <td>Analisar métricas de uso, comportamento do usuário e performance do sistema.</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-3"><strong>Total da equipe:</strong> 11 profissionais</p>
+        </section>
+
+        <section id="produto" class="mb-5">
+            <h3>4. PRODUTO FINAL ESPERADO 🎯</h3>
+            <p>Ao final do desenvolvimento, o QuickFood deverá entregar:</p>
+
+            <h6 class="mt-3"><strong>Componentes do Sistema:</strong></h6>
+            <ul>
+                <li><strong>App Mobile Cliente:</strong> Disponível na Google Play e App Store, com interface intuitiva,
+                    sistema de busca eficiente e rastreamento em tempo real.</li>
+                <li><strong>App Mobile Entregador:</strong> Com sistema de notificação de novos pedidos, GPS integrado
+                    para otimização de rotas e histórico de entregas.</li>
+                <li><strong>Painel Web Restaurante:</strong> Para gestão de cardápio, pedidos, relatórios de vendas
+                    e configurações do estabelecimento.</li>
+                <li><strong>Painel Administrativo:</strong> Dashboard para gestão de usuários, moderação de avaliações,
+                    análise de métricas e resolução de conflitos.</li>
+            </ul>
+
+            <h6 class="mt-3"><strong>Características Técnicas:</strong></h6>
+            <ul>
+                <li><strong>Arquitetura:</strong> Microsserviços escaláveis hospedados em nuvem.</li>
+                <li><strong>Banco de Dados:</strong> PostgreSQL para dados relacionais, Redis para cache.</li>
+                <li><strong>Segurança:</strong> Autenticação JWT, criptografia SSL/TLS, conformidade com LGPD.</li>
+                <li><strong>Performance:</strong> Tempo de carregamento inferior a 2 segundos, suporte a milhares de
+                    usuários simultâneos.</li>
+                <li><strong>Integração:</strong> APIs de pagamento (Stripe, Mercado Pago), Google Maps, serviços de
+                    notificação push.</li>
+            </ul>
+
+            <h6 class="mt-3"><strong>Documentação:</strong></h6>
+            <ul>
+                <li>Manual do usuário e tutoriais em vídeo.</li>
+                <li>Documentação técnica da API (Swagger).</li>
+                <li>Guias de instalação e configuração.</li>
+                <li>Plano de testes e relatórios de qualidade.</li>
+            </ul>
+        </section>
+
+        <section id="apresentacao" class="mb-5">
+            <h3>5. APRESENTAÇÃO DA IDEIA DO PROJETO 💡</h3>
+
+            <h6 class="mt-3"><strong>Visão Geral:</strong></h6>
+            <p>
+                O <strong>QuickFood</strong> surge da necessidade de oferecer uma experiência de delivery mais
+                eficiente,
+                confiável e agradável. Diferente dos concorrentes, nosso foco está na <strong>simplicidade de
+                    uso</strong>,
+                <strong>transparência nas taxas</strong> e <strong>suporte excepcional aos parceiros</strong>
+                (restaurantes e entregadores).
+            </p>
+
+            <h6 class="mt-3"><strong>Diferenciais Competitivos:</strong></h6>
+            <ul>
+                <li><strong>Taxa Justa:</strong> Comissão reduzida para restaurantes parceiros, tornando o serviço mais
+                    acessível.</li>
+                <li><strong>Rastreamento Inteligente:</strong> Algoritmo de IA para otimização de rotas, reduzindo tempo
+                    de entrega.</li>
+                <li><strong>Programa de Fidelidade:</strong> Sistema de pontos que beneficia clientes frequentes.</li>
+                <li><strong>Suporte 24/7:</strong> Chat integrado para resolver problemas em tempo real.</li>
+                <li><strong>Sustentabilidade:</strong> Incentivo a embalagens ecológicas e compensação de carbono nas
+                    entregas.</li>
+            </ul>
+
+            <h6 class="mt-3"><strong>Público-Alvo:</strong></h6>
+            <ul>
+                <li><strong>Primário:</strong> Pessoas de 18 a 45 anos, usuários frequentes de tecnologia, que valorizam
+                    conveniência.</li>
+                <li><strong>Secundário:</strong> Restaurantes de pequeno e médio porte buscando expandir alcance.</li>
+                <li><strong>Terciário:</strong> Entregadores autônomos em busca de renda flexível.</li>
+            </ul>
+
+            <h6 class="mt-3"><strong>Modelo de Receita:</strong></h6>
+            <ul>
+                <li>Comissão sobre pedidos (15% para restaurantes).</li>
+                <li>Taxa de entrega variável conforme distância.</li>
+                <li>Assinatura premium para clientes (frete grátis ilimitado).</li>
+                <li>Publicidade destacada para restaurantes no app.</li>
+            </ul>
+
+            <h6 class="mt-3"><strong>Cronograma de Lançamento:</strong></h6>
+            <ul>
+                <li><strong>Mês 1-3:</strong> Desenvolvimento do MVP e testes internos.</li>
+                <li><strong>Mês 4:</strong> Beta fechado com grupo selecionado de restaurantes.</li>
+                <li><strong>Mês 5:</strong> Lançamento oficial em uma cidade piloto.</li>
+                <li><strong>Mês 6-12:</strong> Expansão gradual para outras regiões com base no feedback.</li>
+            </ul>
+        </section>
+
+        <!-- SEÇÃO DE CONTATO E PERFIS -->
+        <section id="contact" class="mb-5">
+            <h3>CONTATO E PERFIS 🔗</h3>
+
+            <div class="profile-links mb-3">
+                <a href="https://orcid.org/0009-0003-5991-5520" target="_blank" title="ORCID">
+                    <i class="fab fa-orcid"></i> ORCID
+                </a>
+                <a href="https://zenodo.org/users/miguel-ferreira" target="_blank" title="Zenodo">
+                    <i class="fas fa-database"></i> Zenodo
+                </a>
+                <a href="https://www.linkedin.com/in/miguel-expedito-2aa2a9164/" target="_blank" title="Linkedin">
+                    <i class="fab fa-linkedin"></i> Linkedin
+                </a>
+                <a href="https://github.com/migueleaferreira" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="contact-info">
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:miguelferreiiraa@outlok.com">miguelferreiiraa@outlok.com</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <a href="engenharia_de_software.html" class="footer-link left">← Engenharia de Software</a>
+            <p class="footer-name">Miguel Expedito © 2025</p>
+            <a href="analise_requisitos.html" class="footer-link right">Análise de Requisitos →</a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
